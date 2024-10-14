@@ -18,7 +18,7 @@ import java.util.Map;
 public class StripePaymentGateway implements PaymentGateway{
     @Override
     public String generatePaymentLink(String orderId, Long amount, String phoneNumber, String email) throws StripeException {
-        Stripe.apiKey = "sk_test_51OtsmxSItk9rlt3ujhmkEPlR241MmoAKY15e9RG6jeoYocQd6teTIy7Fno5CI4LPTZwHXSyIhsLnYlUienn5vmTs00NxQ9yf2i";
+        Stripe.apiKey = "";
 
 //        Price price=new Price();
 //        price.setCurrency("INR");
