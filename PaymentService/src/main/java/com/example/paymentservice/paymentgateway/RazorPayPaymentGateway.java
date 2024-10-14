@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class RazorPayPaymentGateway implements PaymentGateway{
     @Override
     public String generatePaymentLink(String orderId, Long amount, String phoneNumber, String email) throws RazorpayException {
-        RazorpayClient razorpay = new RazorpayClient("rzp_test_O2C35TyJA9aq7M", "VIv7CgMJGykoAY8vETqxB386");
+        RazorpayClient razorpay = new RazorpayClient("", "");
         JSONObject paymentLinkRequest = new JSONObject();
         paymentLinkRequest.put("amount",1000);
 //        paymentLinkRequest.put("currency","INR");
